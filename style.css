@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    background-color: #fdf6e3;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4a6337;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    font-family: 'Georgia', serif;
+    border: 1px solid #c5c3b0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f3e7;
+    color: #3e4a3f;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state for input and button */
+form input:focus,
+form button:focus {
+    outline: 2px solid #4a6337;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List Item Styling */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #c5c3b0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fefbf3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4a6337;
+    color: #fdf6e3;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #5b7c44;
+    transform: translateY(-2px);
+}
+
+/* Disabled Button */
+button:disabled {
+    background-color: #c5c3b0;
+    cursor: not-allowed;
+}
+
+/* Purchased Items Styling */
+.purchased {
+    text-decoration: line-through;
+    color: #787c6e;
+}
+
+/* Counters Styling */
+#counters {
+    display: flex;
+    justify-content: space-between; /* Space between the counters */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Bottom margin */
+    font-size: 16px; /* Adjust font size */
+}
+
+#item-counter {
+    flex: 1; /* Take up remaining space */
+}
+
+#purchased-counter {
+    color: gold; /* Gold color for purchased counter */
+    text-align: right; /* Align text to the right */
+    font-weight: bold;
+}
+
+/* Styling for counters when empty */
+#item-counter,
+#purchased-counter {
+    font-size: 1.2rem;
+}
+
+/* Placeholder Message */
+#placeholder-message {
+    text-align: center;
+    color: #787c6e;
+}
